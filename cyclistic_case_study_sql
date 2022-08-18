@@ -1,0 +1,475 @@
+/Create separate tables for each month/
+
+CREATE TABLE july_2021 (
+    ride_id varchar(255),
+    rideable_type varchar(255),
+    started_at timestamp,
+    day_of_week real,
+    ended_at timestamp,
+    ride_length time,
+    start_station_name varchar(255),
+    start_station_id varchar(255),
+    end_station_name varchar(255),
+    end_station_id varchar(255),
+    start_lat real,
+    start_lng real,
+    end_lat real,
+    end_lng real,
+    member_casual varchar(255));
+    
+    CREATE TABLE august_2021 (
+    ride_id varchar(255),
+    rideable_type varchar(255),
+    started_at timestamp,
+    day_of_week real,
+    ended_at timestamp,
+    ride_length time,
+    start_station_name varchar(255),
+    start_station_id varchar(255),
+    end_station_name varchar(255),
+    end_station_id varchar(255),
+    start_lat real,
+    start_lng real,
+    end_lat real,
+    end_lng real,
+    member_casual varchar(255));
+    
+    CREATE TABLE september_2021 (
+    ride_id varchar(255),
+    rideable_type varchar(255),
+    started_at timestamp,
+    day_of_week real,
+    ended_at timestamp,
+    ride_length time,
+    start_station_name varchar(255),
+    start_station_id varchar(255),
+    end_station_name varchar(255),
+    end_station_id varchar(255),
+    start_lat real,
+    start_lng real,
+    end_lat real,
+    end_lng real,
+    member_casual varchar(255));
+    
+    CREATE TABLE october_2021 (
+    ride_id varchar(255),
+    rideable_type varchar(255),
+    started_at timestamp,
+    day_of_week real,
+    ended_at timestamp,
+    ride_length time,
+    start_station_name varchar(255),
+    start_station_id varchar(255),
+    end_station_name varchar(255),
+    end_station_id varchar(255),
+    start_lat real,
+    start_lng real,
+    end_lat real,
+    end_lng real,
+    member_casual varchar(255));
+    
+    CREATE TABLE november_2021 (
+    ride_id varchar(255),
+    rideable_type varchar(255),
+    started_at timestamp,
+    day_of_week real,
+    ended_at timestamp,
+    ride_length time,
+    start_station_name varchar(255),
+    start_station_id varchar(255),
+    end_station_name varchar(255),
+    end_station_id varchar(255),
+    start_lat real,
+    start_lng real,
+    end_lat real,
+    end_lng real,
+    member_casual varchar(255));
+
+    CREATE TABLE december_2021 (
+    ride_id varchar(255),
+    rideable_type varchar(255),
+    started_at timestamp,
+    day_of_week real,
+    ended_at timestamp,
+    ride_length time,
+    start_station_name varchar(255),
+    start_station_id varchar(255),
+    end_station_name varchar(255),
+    end_station_id varchar(255),
+    start_lat real,
+    start_lng real,
+    end_lat real,
+    end_lng real,
+    member_casual varchar(255));
+    
+    CREATE TABLE january_2022 (
+    ride_id varchar(255),
+    rideable_type varchar(255),
+    started_at timestamp,
+    day_of_week real,
+    ended_at timestamp,
+    ride_length time,
+    start_station_name varchar(255),
+    start_station_id varchar(255),
+    end_station_name varchar(255),
+    end_station_id varchar(255),
+    start_lat real,
+    start_lng real,
+    end_lat real,
+    end_lng real,
+    member_casual varchar(255));
+    
+    CREATE TABLE february_2022 (
+    ride_id varchar(255),
+    rideable_type varchar(255),
+    started_at timestamp,
+    day_of_week real,
+    ended_at timestamp,
+    ride_length time,
+    start_station_name varchar(255),
+    start_station_id varchar(255),
+    end_station_name varchar(255),
+    end_station_id varchar(255),
+    start_lat real,
+    start_lng real,
+    end_lat real,
+    end_lng real,
+    member_casual varchar(255));
+    
+    CREATE TABLE march_2022 (
+    ride_id varchar(255),
+    rideable_type varchar(255),
+    started_at timestamp,
+    day_of_week real,
+    ended_at timestamp,
+    ride_length time,
+    start_station_name varchar(255),
+    start_station_id varchar(255),
+    end_station_name varchar(255),
+    end_station_id varchar(255),
+    start_lat real,
+    start_lng real,
+    end_lat real,
+    end_lng real,
+    member_casual varchar(255));
+
+    CREATE TABLE april_2022 (
+    ride_id varchar(255),
+    rideable_type varchar(255),
+    started_at timestamp,
+    day_of_week real,
+    ended_at timestamp,
+    ride_length time,
+    start_station_name varchar(255),
+    start_station_id varchar(255),
+    end_station_name varchar(255),
+    end_station_id varchar(255),
+    start_lat real,
+    start_lng real,
+    end_lat real,
+    end_lng real,
+    member_casual varchar(255));
+
+    CREATE TABLE may_2022 (
+    ride_id varchar(255),
+    rideable_type varchar(255),
+    started_at timestamp,
+    day_of_week real,
+    ended_at timestamp,
+    ride_length time,
+    start_station_name varchar(255),
+    start_station_id varchar(255),
+    end_station_name varchar(255),
+    end_station_id varchar(255),
+    start_lat real,
+    start_lng real,
+    end_lat real,
+    end_lng real,
+    member_casual varchar(255));
+
+    CREATE TABLE june_2022 (
+    ride_id varchar(255),
+    rideable_type varchar(255),
+    started_at timestamp,
+    day_of_week real,
+    ended_at timestamp,
+    ride_length time,
+    start_station_name varchar(255),
+    start_station_id varchar(255),
+    end_station_name varchar(255),
+    end_station_id varchar(255),
+    start_lat real,
+    start_lng real,
+    end_lat real,
+    end_lng real,
+    member_casual varchar(255));
+
+/Load CSV file into the table/
+COPY july_2021(ride_id, rideable_type, started_at, day_of_week, ended_at, ride_length, start_station_name, start_station_id, end_station_name, end_station_id, start_lat, start_lng, end_lat, end_lng, member_casual)
+FROM 'D:\Coursera\GOOGLE DATA ANALYTICS\case studies\CYCLISTIC COMPANY CASE STUDY\DATA\prev 12 months data set\.csv columns added\202107-divvy-tripdata.csv'
+DELIMITER ','
+CSV HEADER;
+COPY august_2021(ride_id, rideable_type, started_at, day_of_week, ended_at, ride_length, start_station_name, start_station_id, end_station_name, end_station_id, start_lat, start_lng, end_lat, end_lng, member_casual)
+FROM 'D:\Coursera\GOOGLE DATA ANALYTICS\case studies\CYCLISTIC COMPANY CASE STUDY\DATA\prev 12 months data set\.csv columns added\202108-divvy-tripdata.csv'
+DELIMITER ','
+CSV HEADER;
+COPY september_2021(ride_id, rideable_type, started_at, day_of_week, ended_at, ride_length, start_station_name, start_station_id, end_station_name, end_station_id, start_lat, start_lng, end_lat, end_lng, member_casual)
+FROM 'D:\Coursera\GOOGLE DATA ANALYTICS\case studies\CYCLISTIC COMPANY CASE STUDY\DATA\prev 12 months data set\.csv columns added\202109-divvy-tripdata.csv'
+DELIMITER ','
+CSV HEADER;
+COPY october_2021(ride_id, rideable_type, started_at, day_of_week, ended_at, ride_length, start_station_name, start_station_id, end_station_name, end_station_id, start_lat, start_lng, end_lat, end_lng, member_casual)
+FROM 'D:\Coursera\GOOGLE DATA ANALYTICS\case studies\CYCLISTIC COMPANY CASE STUDY\DATA\prev 12 months data set\.csv columns added\202110-divvy-tripdata.csv'
+DELIMITER ','
+CSV HEADER;
+COPY november_2021(ride_id, rideable_type, started_at, day_of_week, ended_at, ride_length, start_station_name, start_station_id, end_station_name, end_station_id, start_lat, start_lng, end_lat, end_lng, member_casual)
+FROM 'D:\Coursera\GOOGLE DATA ANALYTICS\case studies\CYCLISTIC COMPANY CASE STUDY\DATA\prev 12 months data set\.csv columns added\202111-divvy-tripdata.csv'
+DELIMITER ','
+CSV HEADER;
+COPY december_2021(ride_id, rideable_type, started_at, day_of_week, ended_at, ride_length, start_station_name, start_station_id, end_station_name, end_station_id, start_lat, start_lng, end_lat, end_lng, member_casual)
+FROM 'D:\Coursera\GOOGLE DATA ANALYTICS\case studies\CYCLISTIC COMPANY CASE STUDY\DATA\prev 12 months data set\.csv columns added\202112-divvy-tripdata.csv'
+DELIMITER ','
+CSV HEADER;
+COPY january_2022(ride_id, rideable_type, started_at, day_of_week, ended_at, ride_length, start_station_name, start_station_id, end_station_name, end_station_id, start_lat, start_lng, end_lat, end_lng, member_casual)
+FROM 'D:\Coursera\GOOGLE DATA ANALYTICS\case studies\CYCLISTIC COMPANY CASE STUDY\DATA\prev 12 months data set\.csv columns added\202201-divvy-tripdata.csv'
+DELIMITER ','
+CSV HEADER;
+COPY february_2022(ride_id, rideable_type, started_at, day_of_week, ended_at, ride_length, start_station_name, start_station_id, end_station_name, end_station_id, start_lat, start_lng, end_lat, end_lng, member_casual)
+FROM 'D:\Coursera\GOOGLE DATA ANALYTICS\case studies\CYCLISTIC COMPANY CASE STUDY\DATA\prev 12 months data set\.csv columns added\202202-divvy-tripdata.csv'
+DELIMITER ','
+CSV HEADER;
+COPY march_2022(ride_id, rideable_type, started_at, day_of_week, ended_at, ride_length, start_station_name, start_station_id, end_station_name, end_station_id, start_lat, start_lng, end_lat, end_lng, member_casual)
+FROM 'D:\Coursera\GOOGLE DATA ANALYTICS\case studies\CYCLISTIC COMPANY CASE STUDY\DATA\prev 12 months data set\.csv columns added\202203-divvy-tripdata.csv'
+DELIMITER ','
+CSV HEADER;
+COPY april_2022(ride_id, rideable_type, started_at, day_of_week, ended_at, ride_length, start_station_name, start_station_id, end_station_name, end_station_id, start_lat, start_lng, end_lat, end_lng, member_casual)
+FROM 'D:\Coursera\GOOGLE DATA ANALYTICS\case studies\CYCLISTIC COMPANY CASE STUDY\DATA\prev 12 months data set\.csv columns added\202204-divvy-tripdata.csv'
+DELIMITER ','
+CSV HEADER;
+COPY may_2022(ride_id, rideable_type, started_at, day_of_week, ended_at, ride_length, start_station_name, start_station_id, end_station_name, end_station_id, start_lat, start_lng, end_lat, end_lng, member_casual)
+FROM 'D:\Coursera\GOOGLE DATA ANALYTICS\case studies\CYCLISTIC COMPANY CASE STUDY\DATA\prev 12 months data set\.csv columns added\202205-divvy-tripdata.csv'
+DELIMITER ','
+CSV HEADER;
+COPY june_2022(ride_id, rideable_type, started_at, day_of_week, ended_at, ride_length, start_station_name, start_station_id, end_station_name, end_station_id, start_lat, start_lng, end_lat, end_lng, member_casual)
+FROM 'D:\Coursera\GOOGLE DATA ANALYTICS\case studies\CYCLISTIC COMPANY CASE STUDY\DATA\prev 12 months data set\.csv columns added\202206-divvy-tripdata.csv'
+DELIMITER ','
+CSV HEADER;
+
+/Combine all the tables to a single table using union/
+
+create TABLE allyear (
+	  ride_id varchar(255),
+    rideable_type varchar(255),
+    started_at timestamp,
+    day_of_week real,
+    ended_at timestamp,
+    ride_length time,
+    start_station_name varchar(255),
+    start_station_id varchar(255),
+    end_station_name varchar(255),
+    end_station_id varchar(255),
+    start_lat real,
+    start_lng real,
+    end_lat real,
+    end_lng real,
+    member_casual varchar(255));
+
+/Insert all months data.csv into the single table/
+INSERT INTO allyear(ride_id, rideable_type, started_at, day_of_week, ended_at, ride_length, start_station_name, start_station_id, end_station_name, end_station_id, start_lat, start_lng, end_lat, end_lng, member_casual)
+
+SELECT *
+FROM july_2021
+UNION
+SELECT *
+FROM august_2021
+UNION
+SELECT *
+FROM september_2021
+UNION
+SELECT *
+FROM october_2021
+UNION
+SELECT *
+FROM november_2021
+UNION
+SELECT *
+FROM december_2021
+UNION
+SELECT *
+FROM january_2022
+UNION
+SELECT *
+FROM february_2022
+UNION
+SELECT *
+FROM march_2022
+UNION
+SELECT *
+FROM april_2022
+UNION
+SELECT *
+FROM may_2022
+UNION
+SELECT *
+FROM june_2022;
+
+/1.NO. OF RIDES CATEGORISED BY MONTH BY EACH MEMBER TYPE/
+/CASUAL/
+select extract(month from started_at) as start_month, count(ride_id) from allyear
+where member_casual like '%casual%'
+group by start_month
+order by count desc
+
+/MEMBER/
+select extract(month from started_at) as start_month, count(ride_id) from allyear
+where member_casual like '%member%'
+group by start_month
+order by count desc
+
+/2.AVERAGE RIDE DURATION BY MEMBER TYPE/
+
+/CASUAL/
+SELECT member_casual, avg(ride_length)as average_ride_length from allyear
+where member_casual like '%casual%'
+group by member_casual
+
+/MEMBER/
+SELECT member_casual, avg(ride_length)as average_ride_length from allyear
+where member_casual like '%member'
+group by member_casual
+
+/3. No. of rides in weekday by member type/
+
+/CASUAL/
+select day,count(ride_id)as no_of_rides from allyear
+where member_casual like '%casual%'
+group by day
+order by no_of_rides desc
+
+/MEMBER/
+select day,count(ride_id)as no_of_rides from allyear
+where member_casual like '%member%'
+group by day
+order by no_of_rides desc
+
+/4. CREATE A COLUMN FOR THE DAY OF THE WEEK IN WHICH THE RIDE STARTED/
+Alter table allyear
+Add day varchar(255)
+Update allyear
+Set day = ‘Thursday’
+Where day_of_week in (5)
+Update allyear
+Set day = ‘Friday’
+Where day_of_week in (6)
+Update allyear
+Set day = ‘Saturday’
+Where day_of_week in (7)
+Update allyear
+Set day = ‘Sunday’
+Where day_of_week in (1)
+Update allyear
+Set day = ‘Monday’
+Where day_of_week in (2)
+Update allyear
+Set day = ‘Tuesday’
+Where day_of_week in (3)
+Update allyear
+Set day = ‘Wednesday’
+Where day_of_week in (4)
+
+/5. bikes used by member type/
+/CASUAL/
+select rideable_type,count(rideable_type)as no_of_rides from allyear
+where member_casual like '%casual%'
+group by rideable_type
+order by no_of_rides desc
+
+/MEMBER/
+select rideable_type,count(rideable_type)as no_of_rides from allyear
+where member_casual like '%member%'
+group by rideable_type
+order by no_of_rides desc
+
+/6. No. of trips started at a station by member type (top 10)/
+
+/CASUAL/
+select start_station_name,count(start_station_name)as no_of_rides_started from allyear
+where member_casual like '%casual%'
+group by start_station_name
+order by no_of_rides_started desc
+limit 10
+
+/MEMBER/
+select start_station_name,count(start_station_name)as no_of_rides_started from allyear
+where member_casual like '%member%'
+group by start_station_name
+order by no_of_rides_started desc
+limit 10
+
+/7. average ride length for member type during different times of a day/
+/CASUAL/
+SELECT
+	avg(ride_length), 
+    (CASE 
+    WHEN cast(started_at as time) >= '05:00:00' and cast(started_at as time) < '12:00:00' THEN 'Morning'
+    WHEN cast(started_at as time) >= '12:00:00' and cast(started_at as time) < '17:00:00' THEN 'Afternoon'
+    WHEN cast(started_at as time) >= '17:00:00' and cast(started_at as time) < '20:00:00' THEN 'Evening'
+    ELSE 'Night'
+    END) AS part_of_day
+FROM allyear
+where member_casual like '%casual%'
+GROUP BY part_of_day
+
+/MEMBER/
+SELECT
+	avg(ride_length), 
+    (CASE 
+    WHEN cast(started_at as time) >= '05:00:00' and cast(started_at as time) < '12:00:00' THEN 'Morning'
+    WHEN cast(started_at as time) >= '12:00:00' and cast(started_at as time) < '17:00:00' THEN 'Afternoon'
+    WHEN cast(started_at as time) >= '17:00:00' and cast(started_at as time) < '20:00:00' THEN 'Evening'
+    ELSE 'Night'
+    END) AS part_of_day
+FROM allyear
+where member_casual like '%member%'
+GROUP BY part_of_day
+
+/8. No of rides by a member type during different times of a day/
+
+/CASUAL/
+SELECT
+	count(day_of_week)as no_of_rides, 
+    (CASE 
+    WHEN cast(started_at as time) >= '05:00:00' and cast(started_at as time) < '12:00:00' THEN 'Morning'
+    WHEN cast(started_at as time) >= '12:00:00' and cast(started_at as time) < '17:00:00' THEN 'Afternoon'
+    WHEN cast(started_at as time) >= '17:00:00' and cast(started_at as time) < '20:00:00' THEN 'Evening'
+    ELSE 'Night'
+    END) AS part_of_day
+FROM allyear
+where member_casual like '%member%'
+GROUP BY part_of_day
+
+/MEMBER/
+SELECT
+	count(day_of_week)as no_of_rides, 
+    (CASE 
+    WHEN cast(started_at as time) >= '05:00:00' and cast(started_at as time) < '12:00:00' THEN 'Morning'
+    WHEN cast(started_at as time) >= '12:00:00' and cast(started_at as time) < '17:00:00' THEN 'Afternoon'
+    WHEN cast(started_at as time) >= '17:00:00' and cast(started_at as time) < '20:00:00' THEN 'Evening'
+    ELSE 'Night'
+    END) AS part_of_day
+FROM allyear
+where member_casual like '%member%'
+GROUP BY part_of_day
+
+/Export all year(merged)data to csv file/
+Copy (select * from allyear)to 'D:\Coursera\GOOGLE DATA ANALYTICS\case studies\CYCLISTIC COMPANY CASE STUDY\DATA\all year data set\cyclistallyear.csv'
+WITH DELIMITER ',' CSV HEADER;
+
+
+
+
+
+
+
+
+
+
